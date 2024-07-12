@@ -1,0 +1,164 @@
+.dropbtn {
+    background-color: darkblue;
+    color: white;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left: -7px;
+    margin-right: 16px;
+  }
+
+
+
+div#navbarSupportedContent.collapse.navbar-collapse {
+  justify-content: space-between;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 40px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    text-align: center;
+}
+
+.dropdown-content a img#icon {
+  height: 26px;
+  width:26px;
+  margin-bottom: -10px;
+}
+
+.dropdown-content a {
+  text-align: center;
+  justify-content: center;
+  margin-top: -9px;
+}
+
+/*Dropdown for currency*/
+button#currency.dropbutton, button.dropbutton {
+  background-color: #00AEEF;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  align-items: center;
+  margin-left: -7px;
+  margin-right: 24px;
+  display: inline-block;
+}
+
+div#currency.dropdown-content, div#account.dropdown-content  {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: -6px;
+}
+
+div#currency.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+}
+
+button.dropbutton img {
+  margin-right: 13px;
+}
+
+div#center {
+  margin-left: auto;
+  margin-top: -36px;
+  padding: 3px;
+  margin-right: -74px;
+}
+  
+
+a#currency {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 0px;
+}
+
+
+.dropdown-caption{
+  padding: 10px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: darkblue;
+}
+
+div#currency.dropdown:hover #currency.dropdown-contentt {
+  display: block;
+}
+
+/*Dropdown for account*/
+.dropbutton {
+  background-color: #00AEEF;
+  color: white;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  margin-left: -7px;
+  margin-right: 16px;
+}
+
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  text-align: center;
+}
+
+li.dropdown.for.account div .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  text-align: center;
+}
+
+li.dropdown.for.account div div#signup.dropdown-caption a {
+  color: blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  text-align: center;
+}
+
+div.dropdown.for.account:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown.for.account {
+  position: relative;
+  display: inline-block;
+}

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels.ng: Book the best Hotels in Nigeria</title>
+    <link rel="shortcut icon" href="https://hotels.ng/img/hotelsng/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/drop-down.css">
+    <link rel="stylesheet" href="css/main-1.css">
+    <link rel="stylesheet" href="main.scss">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #00AEEF;">
+        <div class="container-fluid">
+            <div class="logo">
+                <img alt="logo" src="img/hotels.ng.png" style="height: fit-content">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="height: 26px;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="margin-right: 230px;">
+                         
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://api.whatsapp.com/send?phone=2349069892915" target="_blank">
+                            <img src="img/icons8-whatsapp-48.png" alt="whatsapp" width="30px" height="30px">
+                        </a>
+                    </li>
+
+                    <!--Dropdown for contact-->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/icons8-online-support-94.png" alt="" style="width: 30px; height: 30px; margin:0px; margin-top: -20px;">
+                            <button class="dropbtn">
+                                <span class="contact-text-md contact-text-main" style="color:#00AEEF; padding: 6px; font-size: 10px;">You can call us to book your hotel</span>
+                                <br>
+                                <span class="contact-text-md">
+                                    +234 700 880 8800
+                                </span>
+                            </button>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="https://web.whatsapp.com" target="_blank" class="dropdown-link dropdown-item">
+                                    <img alt="whatsapp-icon" id="icon" src="img/icons8-whatsapp-48.png">+234 906 989 2915
+                                </a>
+                            </li>
+                            <li >
+                                <a class="dropdown-item" href="tel:+2348104959606">
+                                    <img alt="call-icon" id="icon" src="img/icons8-call-80.png">+234 906 989 2915
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img alt="call-icon" id="icon" src="img/icons8-call-80.png">
+                                    +234 810 495 9606
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--End of dropdown for contact-->
+
+                    <!--Dropdown for currency-->
+                    <li class="nav-item" id="currency">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/icons8-nigeria-48.png" class="contact-img-sm" id="icon" alt="customer" style="height: 40px; width: 40px; margin-left: -10px;">
+                            <button class="dropbutton" id="currency" style="margin-top: -10px; display:inline-flex;" >
+                                <span class="nigeria-text-md" id="center">
+                                    ₦
+                                </span>
+                            </button>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="dropdown-caption">
+                                    Choose your preferred currency for the hotel rates:
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" data-currency-shortname="NGN" data-selected="1" class='currency__option dropdown__link text-white'>
+                                    <span class="nigeria-text-md">₦ </span>
+                                    <span style="margin-right: 10px"></span>
+                                                Nigerian Naira
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-currency-shortname="EUR" data-selected="" class='currency__option dropdown__link'>
+
+                                    €
+                                    <span style="margin-right: 10px"></span>
+                                    European Euro
+                            
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-currency-shortname="USD" data-selected="" class='currency__option dropdown__link'>
+                                    $
+                                    <span style="margin-right: 10px"></span>
+                                    U.S. dollar
+                            
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-currency-shortname="GBP" data-selected="" class='currency__option dropdown__link'>
+                                    £
+                                    <span style="margin-right: 10px"></span>
+                                    British Pound Sterling
+                            
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--End of dropdown for currency-->
+
+                    
+                    <!--Dropdown for Account-->
+                    <li class="nav-item" id="account">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="dropbutton" style="display: inline-flex;">
+                                <div class="avatar_icon">
+                                    <img src="img/account.png" alt="account icon" style="height: 30px; width: 30px;">
+                                </div>
+                                <span class="text-white text-sm" style="padding: 8px;">Account</span>
+                            </button>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="dropdown-caption">
+                                    Sign in to access exclusive member deals
+                                    <br>
+                                    <br>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown-caption">
+                                    <a href="/signin" class="btn w-100 sign-in-button btn-primary"style="background-color: #00AEEF; padding: 6px;" >Sign in</a>
+                                    <br>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown-caption" style="display: inline-flex; justify-content: flex-start;" id="signup">
+                                    New here? <a href="/signup" >Sign up</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--End of dropdown for Account-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="homepage bg-white">
+        <!--Search and calender box for hotel searching-->
+        <div class="position-relative" style="background-position: 50%;background-image: url(https://hotels.ng/img/hotelsng/v7-homepage1.jpg); height: 50vh; background-repeat: no-repeat; background-size: cover;">
+            <div class="overlay d-flex justify-content-center align-items-center h-100">
+                <div class="overlay d-flex justify-content-center align-items-center h-100">
+                    <div class="container text-center text-white">
+                        <h1>Find and book hotels in Nigeria.</h1>
+                        <h4>Search through 13,224 hotels in Nigeria</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-form-container d-none d-sm-none d-md-block">
+            <!--search section-->
+            <div class="row g-3 seach-section" style="box-sizing: border-box; background-color: white; height: auto; width: auto; position: relative; margin-top: -43px; margin-left: 45px; margin-right: 45px;">
+                <form class="row gy-2 gx-3 align-items-center">
+                    <div class="col">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                </svg>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search for a city or particular hotel" aria-hidden="true" required aria-label="Search Field">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <input type="text" id="checkdate" class="form-control icon--present input-lg" placeholder="Check In - Check Out" readonly aria-label="Check In - Check Out"/>
+                    </div>
+                    <div class="col">
+                    <button type="submit" class="btn btn-primary" style="width: -webkit-fill-available;">Find Hotels</button>
+                    </div>
+                </form>
+            </div>
+        </div>        
+        <div class="mobile-search w-100 d-sm-block d-md-none" style="background-color: #fafafa; padding: 25px;">
+            <form method="GET" action="/search" autocomplete="off" class="d-flex align-items-center gap-2">
+                <div class="input-group flex-nowrap" style="width: calc(100% - 110px); height: 40px!important;">
+                    <span class="input-group-text" id="addon-wrapping">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </span>
+                    <input type="text" class="form-control h-100 typeahead" name="query" placeholder="Search for a city or particular hotel" required>
+                </div>
+                <button class="hover:bg-sky-500 text-white" style="min-width: 110px; height: 37px; background: #00aeff; border-radius: 4px; font-weight: 700; border: none;">Find Hotels
+            </button>
+            </form>
+        </div>
+        <section class="suggested_destinations">
+            <div class="container text-center">
+                <p class="mb-0">
+                    <p class="header">
+                        <h2>
+                            Suggested Destinations in Nigeria
+                        </h2>
+                    </p>
+                    <p class="sub-header text-center">
+                        <h5>
+                            Below are the most popular travel destinations in Nigeria
+                        </h5>
+                    </p>
+                    <!--Divider-->
+                    <div class="tiny-divider"></div>
+                </p>
+                <div class="row">
+                    <div class="col-6 col-md-2 col-sm-4">
+                        <a href="hotels-in-lagos">
+                            <div class="suggested_city">
+                                <h5 class="heading">
+                                    Hotels in <br>Lagos 
+                                </h5>
+                                <p>
+                                    0 hotels
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2 col-sm-4">
+                        <a href="hotels-in-abuja">
+                            <div class="suggested_city">
+                                <h5 class="heading">
+                                    Hotels in <br>Abuja 
+                                </h5>
+                                <p>
+                                    0 hotels
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2 col-sm-4">
+                        <a href="hotels-in-rivers/port-harcourt">
+                            <div class="suggested_city">
+                                <h5 class="heading">
+                                    Hotels in <br>Port Harcourt 
+                                </h5>
+                                <p>
+                                    0 hotels
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2 col-sm-4">
+                        <a href="hotels-in-kaduna">
+                            <div class="suggested_city">
+                                <h5 class="heading">
+                                    Hotels in <br>Kaduna 
+                                </h5>
+                                <p>
+                                    0 hotels
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2 col-sm-4">
+                        <a href="hotels-in-akwaibom/uyo">
+                            <div class="suggested_city">
+                                <h5 class="heading">
+                                    Hotels in <br>Uyo 
+                                </h5>
+                                <p>
+                                    0 hotels
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-2 col-sm-4">
+                        <a href="hotels-in-oyo/ibadan">
+                            <div class="suggested_city">
+                                <h5 class="heading">
+                                    Hotels in <br>Ibadan 
+                                </h5>
+                                <p>
+                                    0 hotels
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main class="container mx-auto">
+            <div class="container top-deals-container">
+                <div class="text-center">
+                    <h2 class="header top-deals-header">
+                        Today's Top Hotel Deals
+                    </h2>
+                    <p class="sub-header top-deals-sub-header text-center">
+                        A selection of the best hotel deals, only available today
+                    </p>
+                    <!--Divider-->
+                    <div class="tiny-divider"></div>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hotel room 1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Blue Moon Hotel, VI</h3>
+                                    <p class="card-text">
+                                        <a href="https://hotels.ng/hotels-in-lagos/victoria-island" class="color-dark">
+                                            Victoria island
+                                        </a>
+                                        , <a href="hotels-in-lagos" class="color-dark">Lagos</a>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <p class="listing-hotels-discount rv-card-discount">
+                                            Up to <span>22%</span>
+                                            off
+                                        </p>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hotel room 2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Best Premier Maitama Residence</h3>
+                                    <p class="card-text">
+                                        <a href="https://hotels.ng/hotels-in-abuja/maitama" class="color-dark">
+                                            Maitama
+                                        </a>
+                                        , <a href="hotels-in-abuja" class="color-dark">
+                                            Abuja
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <p class="listing-hotels-discount rv-card-discount">
+                                            Up to <span>28%</span> off
+                                        </p>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hotel room 3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">New Travellers Lodge Sangetedo</h3>
+                                    <p class="card-text">
+                                        <a href="https://hotels.ng/hotels-in-lagos/sangotedo" class="color-dark">
+                                            Sangotedo
+                                        </a>
+                                        , <a href="hotels-in-lagos" class="color-dark">
+                                            Lagos
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <p class="listing-hotels-discount rv-card-discount">
+                                            Up to <span>18%</span>
+                                            off
+                                        </p>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hotel room 4.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">D &#039;Island Hotel</h3>
+                                    <p class="card-text">
+                                        <a href="https://hotels.ng/hotels-in-lagos/ajah" class="color-dark">
+                                            Ajah
+                                        </a>
+                                        , <a href="hotels-in-lagos" class="color-dark">
+                                            Lagos
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <p class="listing-hotels-discount rv-card-discount">
+                                            Up to <span>18%</span>
+                                            off
+                                        </p>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hotel room 5.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">New View Beach Hotel and Resort, Lekki (Formerly Bluemoon Beach Hotel and Suites)</h3>
+                                    <p class="card-text">
+                                        <a href="https://hotels.ng/hotels-in-lagos/lekki" class="color-dark">
+                                            Lekki
+                                        </a>
+                                        , <a href="hotels-in-lagos" class="color-dark">
+                                            Lagos
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <p class="listing-hotels-discount rv-card-discount">
+                                            Up to <span>20%</span>
+                                            off
+                                        </p>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="img/hotel room 6.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h3 class="card-title">Buddiez Hotel &amp; Resort</h3>
+                                    <p class="card-text">
+                                        <a href="https://hotels.ng/hotels-in-enugu/independence-layout" class="color-dark">
+                                            Independence layout
+                                        </a>
+                                        , <a href="hotels-in-enugu" class="color-dark">
+                                            Enugu
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-body-secondary">
+                                        <p class="listing-hotels-discount rv-card-discount">
+                                            Up to <span>20%</span>
+                                            off
+                                        </p>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="locations-around">
+                <div class="text-center">
+                    <h2 class="header">Popular cities with Hotels.ng travellers</h2>
+                    <p class="sub-header">See the top destinations people are traveling to</p>
+                    <div class="tiny-divider"></div>
+                </div>
+                <div class="featured-cities">
+                    <div class="featured-city">
+                        <a href="https://hotels.ng/hotels-in-lagos">
+                            <img src="https://hotels.ng/img/hotelsng/popular/lagos_city1.jpg" srcset="https://hotels.ng/img/hotelsng/popular/lagos_city1.jpg 600w,
+                                            https://hotels.ng/img/hotelsng/popular/lagos_city1.jpg 400w,
+                                            https://hotels.ng/img/hotelsng/popular/lagos_city1.jpg 200w" sizes="(max-width: 600px) 100vw, (max-width: 800px) 50vw, 400px" alt="Lagos Hotelss" class="width-100"/>
+                            <div class="city-name">
+                                <p>0
+                                         </p>
+                                <h3 class="">Lagos Hotels
+                                         </h3>
+                            </div>
+                        </a>
+                        <div class="featured-city-cta">
+                            <a href="https://hotels.ng/hotels-in-lagos" class="cta-button">Book Hotels in Lagos</a>
+                        </div>
+                    </div>
+                    <div class="featured-city">
+                        <a href="https://hotels.ng/hotels-in-abuja">
+                            <img src="https://hotels.ng/img/hotelsng/popular/abuja_city1.jpg" srcset="https://hotels.ng/img/hotelsng/popular/abuja_city1.jpg 600w,
+                                            https://hotels.ng/img/hotelsng/popular/abuja_city1.jpg 400w,
+                                            https://hotels.ng/img/hotelsng/popular/abuja_city1.jpg 200w" sizes="(max-width: 600px) 100vw, (max-width: 800px) 50vw, 400px" alt="Abuja Hotelss" class="width-100"/>
+                            <div class="city-name">
+                                <p>0
+                                         </p>
+                                <h3 class="">Abuja Hotels
+                                         </h3>
+                            </div>
+                        </a>
+                        <div class="featured-city-cta">
+                            <a href="https://hotels.ng/hotels-in-abuja" class="cta-button">Book Hotels in Abuja</a>
+                        </div>
+                    </div>
+                    <div class="featured-city">
+                        <a href="https://hotels.ng/hotels-in-crossriver/calabar">
+                            <img src="https://hotels.ng/img/hotelsng/popular/crossriver_city1.jpg" srcset="https://hotels.ng/img/hotelsng/popular/crossriver_city1.jpg 600w,
+                                            https://hotels.ng/img/hotelsng/popular/crossriver_city1.jpg 400w,
+                                            https://hotels.ng/img/hotelsng/popular/crossriver_city1.jpg 200w" sizes="(max-width: 600px) 100vw, (max-width: 800px) 50vw, 400px" alt="Calabar Hotelss" class="width-100"/>
+                            <div class="city-name">
+                                <p>0
+                                         </p>
+                                <h3 class="">Calabar Hotels
+                                         </h3>
+                            </div>
+                        </a>
+                        <div class="featured-city-cta">
+                            <a href="https://hotels.ng/hotels-in-crossriver/calabar" class="cta-button">Book Hotels in Calabar</a>
+                        </div>
+                    </div>
+                    <div class="featured-city">
+                        <a href="https://hotels.ng/hotels-in-rivers/port-harcourt">
+                            <img src="https://hotels.ng/img/hotelsng/popular/port-harcourt_city1.jpg" srcset="https://hotels.ng/img/hotelsng/popular/port-harcourt_city1.jpg 600w,
+                                            https://hotels.ng/img/hotelsng/popular/port-harcourt_city1.jpg 400w,
+                                            https://hotels.ng/img/hotelsng/popular/port-harcourt_city1.jpg 200w" sizes="(max-width: 600px) 100vw, (max-width: 800px) 50vw, 400px" alt="Port Harcourt Hotelss" class="width-100"/>
+                            <div class="city-name">
+                                <p>0
+                                         </p>
+                                <h3 class="">Port Harcourt Hotels
+                                         </h3>
+                            </div>
+                        </a>
+                        <div class="featured-city-cta">
+                            <a href="https://hotels.ng/hotels-in-rivers/port-harcourt" class="cta-button">Book Hotels in Port Harcourt</a>
+                        </div>
+                    </div>
+                    <div class="featured-city">
+                        <a href="https://hotels.ng/hotels-in-imo/owerri">
+                            <img src="https://hotels.ng/img/hotelsng/popular/owerri_city1.jpg" srcset="https://hotels.ng/img/hotelsng/popular/owerri_city1.jpg 600w,
+                                            https://hotels.ng/img/hotelsng/popular/owerri_city1.jpg 400w,
+                                            https://hotels.ng/img/hotelsng/popular/owerri_city1.jpg 200w" sizes="(max-width: 600px) 100vw, (max-width: 800px) 50vw, 400px" alt="Owerri Hotelss" class="width-100"/>
+                            <div class="city-name">
+                                <p>0
+                                         </p>
+                                <h3 class="">Owerri Hotels
+                                         </h3>
+                            </div>
+                        </a>
+                        <div class="featured-city-cta">
+                            <a href="https://hotels.ng/hotels-in-imo/owerri" class="cta-button">Book Hotels in Owerri</a>
+                        </div>
+                    </div>
+                    <div class="featured-city">
+                        <a href="https://hotels.ng/hotels-in-akwaibom/uyo">
+                            <img src="https://hotels.ng/img/hotelsng/popular/uyo_city1.jpg" srcset="https://hotels.ng/img/hotelsng/popular/uyo_city1.jpg 600w,
+                                            https://hotels.ng/img/hotelsng/popular/uyo_city1.jpg 400w,
+                                            https://hotels.ng/img/hotelsng/popular/uyo_city1.jpg 200w" sizes="(max-width: 600px) 100vw, (max-width: 800px) 50vw, 400px" alt="Uyo Hotelss" class="width-100"/>
+                            <div class="city-name">
+                                <p>0
+                                         </p>
+                                <h3 class="">Uyo Hotels
+                                         </h3>
+                            </div>
+                        </a>
+                        <div class="featured-city-cta">
+                            <a href="https://hotels.ng/hotels-in-akwaibom/uyo" class="cta-button">Book Hotels in Uyo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

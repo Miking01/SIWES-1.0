@@ -1,0 +1,102 @@
+.navbar {
+    background-color: #00AEEF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    height: 0px;
+    width: auto;
+}
+/*img icons*/
+img#icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+}
+
+/*Contact*/
+ul {
+    width: fit-content;
+    list-style-type: none;
+}
+
+li {
+    margin-left: 16px;
+    border-right: 1px solid white;
+}
+  
+li#account.nav-item {
+    margin-left: 16px;
+    border: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+
+.position-relative.jumbotron.overflow-hidden.w-100 {
+    background: rgba(51, 51, 51, .5);
+}
+
+.row.gy-2.gx-3.align-items-center {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 60px;
+    display: inline-flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: -29px;
+    padding: 60px;
+    margin-right: calc(-.5* 3px);
+    margin-left: calc(-.5* 3px);
+}
+
+
+.placeholder-icon {
+    position: absolute;
+    top: 63%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+
+/*most popular travel destination*/
+.suggested_city {
+    border: 3px solid #00AEEF;
+    height:min-content;
+    width:auto;
+    margin-left: 7px;
+    margin-bottom: 20px;
+    padding: 0px;
+    justify-content: center;
+}
+
+.heading{
+    padding: 3px;
+    color: #00AEEF;
+}
+
+.col-6.col-md-2.col-sm-4 a {
+    font-style:normal;
+    text-decoration: none;
+}
+
+.btn.btn-primary {
+    background-color: #00AEEF
+}
+
+.card-title {
+    color: #00AEEF;
+}
+
+p.card-text a {
+    color: black;
+    text-decoration:none;
+}
+
+.card-footer {
+    background-color: #00AEEF;
+}

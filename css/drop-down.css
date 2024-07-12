@@ -1,0 +1,104 @@
+div#navbarSupportedContent.collapse.navbar-collapse {
+    position: relative;
+}
+.nav-item {
+    padding: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*Dropdown*/
+ul.navbar-nav {
+    display: contents;
+    justify-content:center;
+}
+
+ul.navbar-nav li.nav-item {
+    padding: 30px;
+    margin-left: 16px;
+    justify-content:center;
+    align-items: center;
+}
+
+/*Dropdown*/
+li.nav-item ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+li.nav-item ul.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+li.nav-item ul.dropdown-menu a {
+  text-align: center;
+  justify-content: center;
+  margin-top: -9px;
+}
+
+div#navbarSupportedContent.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li div.dropdown-caption a:hover {background-color: #f1f1f1}
+
+div#navbarSupportedContent.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li a.dropdown-item:hover {
+    background-color: #f1f1f1
+}
+
+li.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+
+/*end of contact css*/
+
+
+.dropbtn {
+background-color: darkblue;
+color: white;
+font-size: 13px;
+border: none;
+cursor: pointer;
+border-radius: 40px;
+margin-left: -7px;
+margin-right: 16px;
+}
+
+.dropbutton {
+background-color: #00AEEF;
+color: white;
+font-size: 13px;
+border: none;
+cursor: pointer;
+margin-left: -7px;
+margin-right: 16px;
+}
+
+
+.navbar.navbar-expand-lg {
+background-color: #00AEEF;
+}
+
+.divcontainer-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.position-relative {
+    margin-bottom: 0px;
+}
+
+div.homepage.bg-white div.row.g-3.search-section {
+    margin-top: -60px;
+}
