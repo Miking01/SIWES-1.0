@@ -2,7 +2,7 @@ div#navbarSupportedContent.collapse.navbar-collapse {
     position: relative;
 }
 .nav-item {
-    padding: 10px;
+    padding: 0px;
     justify-content: space-between;
     position: relative;
 }
@@ -48,10 +48,14 @@ li.nav-item ul.dropdown-menu a {
   margin-top: -9px;
 }
 
-div#navbarSupportedContent.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li div.dropdown-caption a:hover {background-color: #f1f1f1}
+div#navbarSupportedContent.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li div.dropdown-caption a:hover {background-color: #f1f1f1;}
 
 div#navbarSupportedContent.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li a.dropdown-item:hover {
-    background-color: #f1f1f1
+    background-color: #f1f1f1;
+}
+
+div#navbarSupportedContent.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu li a.dropdown-item:hover {
+    background-color: #f1f1f1;
 }
 
 li.nav-item:hover .dropdown-menu {
