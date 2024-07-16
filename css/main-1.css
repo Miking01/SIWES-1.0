@@ -188,3 +188,27 @@ a {
     left: 50%;
 }
 
+.subscribe {
+    position: relative;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 30px;
+}
+
+.row.g-3 {
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.col-sm-2 a {
+    color: #f1f1f1;
+}
+
+.adjust {
+    padding: 30px;
+}
+
+.adjust-01 {
+    padding: 16px;
+}
