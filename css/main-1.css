@@ -278,3 +278,125 @@ div.content-001 {
 html, *, body {
     scroll-behavior: smooth !important;
 }
+
+* {
+    margin: 0;
+}
+
+.unlock-deals-container .unlock-deals {
+    display: flex;
+}
+
+.unlock-deals {
+    background-color: #084482;
+    padding: 16px;
+    min-height: 95px;
+    margin: 0;
+    color: #fff;
+}
+
+
+.unlock-deals-container .unlock-deals-text {
+    align-items: center;
+}
+.unlock-deals-text {
+    display: flex;
+    padding: 0;
+}
+
+.unlock-deals-container .unlock-deals-icon {
+    margin-left: auto;
+    margin-top: -3px;
+}
+
+.unlock-deals-text div {
+    margin-left: 10px;
+}
+.unlock-deals-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unlock-deals-container .unlock-deals-icon svg {
+    fill: #00aeff;
+}
+.unlock-deals svg {
+    fill: #fc8233;
+    width: 21px;
+    height: 21px;
+}
+
+.unlock-deals-container .unlock-deals-text-main {
+    max-width: 390px;
+    text-align: left;
+}
+
+.unlock-deals-text div {
+    margin-left: 10px;
+}
+.unlock-deals-text-main {
+    width: calc(100% - 50px);
+    padding-right: 10px;
+    color: #fff !important;
+}
+
+.unlock-deals h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+}
+
+.unlock-deals-container .unlock-deals-text-main p {
+    color: #00aeff;
+    margin-bottom: 0;
+}
+
+.unlock-deals-container form {
+    max-width: 450px;
+}
+.unlock-deals-form form {
+    margin-bottom: 0;
+    width: 100%;
+    min-height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe-form {
+    display: flex;
+    width: 100%;
+}
+
+.unlock-deals-form input:first-of-type {
+    width: 60%;
+    padding: 0 10px;
+    border-radius: 4px 0 0 4px;
+    border: 0;
+    color: #4f4f4f;
+}
+
+.unlock-deals-container form input {
+    height: 41px;
+    margin-bottom: 0;
+}
+
+.unlock-deals-container form input:last-of-type {
+    border-radius: 0 4px 4px 0;
+}
+.unlock-deals-form input:last-of-type {
+    width: 40%;
+    margin-left: -6px;
+    border-radius: 0;
+    color: #fff;
+    background-color: #00aeff;
+    border: 0;
+    transition: .3s ease-in-out;
+}
