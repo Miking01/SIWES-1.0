@@ -213,81 +213,68 @@ a {
     padding: 16px;
 }
 
-.get-app {
+.container-01 {
     background-color: #eff8fb;
     background-size: cover;
+    position: relative;
+}
+
+.con {
+    position: relative;
+    padding: 30px;
+}
+
+div.content-001 {
+    position: relative;
     display: flex;
+    padding: 30px;
+    align-items: center;
+}
+
+.content-01 {
+    padding: 30px;
+}
+
+.container-mobile {
+    background-color: #eff8fb;
+    background-size: cover;
     position: relative;
-    height: 50vw;
-    max-height: 500px;
-    padding: 0 0 0 20px;
-}
-
-.get-app-image {
-    bottom: 0;
-    max-width: 100%;
-    padding: 10%;
-}
-
-.get-app-image img {
-    max-width: 100%;
-}
-
-.get-app-container>div:last-of-type {
-    position: relative;
-    left: 100%;
-}
-
-.get-app-container>div {
-    position: relative;
-}
-
-.get-app-text {
     width: 100%;
-    padding: 10% 5% 10% 10%;
-    position: absolute;
-    bottom: 0;
 }
 
-:root {
-    --primary: #00AEFF;
-    --secodary: #4F4F4F;
+.content-mobile {
+    position: relative;
+    padding: 30px;
+}
+
+.content-mob {
+    position: relative;
+    display: contents;
+    padding: 30px;
+    align-items: center;
+}
+
+.display-content {
+    padding: 30px;
+}
+
+.img {
+    width: 50%;
+    margin-bottom: -60px;
+}
+
+.row.a-01 {
+    display: grid;
+}
+.display-content .img img {
+    width: 210%;
 }
 
 .get-app-header {
     color: #2196f3;
-    font-weight: 600;
-    font-size: calc(30px + .075*(100vw - 1000px));
-}
-
-.get-app h3 {
-    font-size: calc(15px + 10 * (100vw - 1000px) / 550);
     font-weight: 800;
-    color: #4f4f4f;
-    margin-top: 0;
 }
 
-.get-app p {
-    margin: -1% 0% 5%;
-    color: #4f4f4f;
-    font-weight: 500;
-    text-align: left;
-    font-size: 18px;
-}
-
-.get-app-store {
-    display: inline-block;
-    width: 100%;
-    text-align: left;
-}
-
-.get-app-store img {
-    width: 200px;
-}
-
-img {
-    max-width: 100%;
-}
-img, svg {
-    vertical-align: middle;
+html, *, body {
+    scroll-behavior: smooth !important;
 }
