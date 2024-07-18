@@ -283,7 +283,7 @@ html, *, body {
     margin: 0;
 }
 
-.unlock-deals-container .unlock-deals {
+#footerContainer.unlock-deals-container .unlock-deals {
     display: flex;
 }
 
@@ -399,4 +399,44 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-color: #00aeff;
     border: 0;
     transition: .3s ease-in-out;
+}
+
+.about-us {
+    background-color: #084482;
+    padding: 30px;
+    text-align: center;
+}
+
+.about-us p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.about-us p>a {
+    color: #fff !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.about-us p:last-of-type {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text-sm {
+    font-size: 14px;
+    color: #4f4f4f;
+}
+
+.text-left {
+    text-align: left !important;
 }
